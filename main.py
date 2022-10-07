@@ -57,6 +57,17 @@ def printResults(searchTerms: list, results: list, amount_results: int):
 
 
 if __name__ == "__main__":
-    searchFor = input("Please enter your search terms (comma seperated):\n> ")
+    searchFor = input("\n\nPlease enter your search terms (comma seperated):\n> ")
     searchFor = searchFor.split(',')
-    search(searchFor)
+    amountResults = input('Default results are 5, if you want more/less, please type in a number, else type "no"\n>')
+    try:
+        number = int(amountResults)
+        print(f'Results will be having {number} results')
+        search(searchFor, amount_results=number)
+
+    except Exception as e:
+        print(f'Results will be having 5 results (default)')
+        search(searchFor)
+
+
+
