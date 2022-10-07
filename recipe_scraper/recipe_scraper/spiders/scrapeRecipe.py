@@ -6,20 +6,16 @@ import jsonlines
 class ScrapeRecipeSpider(scrapy.Spider):
     name = "scrapeRecipe"
 
-    def __init__(self):
-        self.recipeName = ''
-        self.recipeURL = ''
 
     def start_requests(self):
         f = open('names_urls.txt')
         lines = f.readlines()
         for line in lines:
-            self.recipeName, self.recipeURL = line.split(';')
-            self.recipeURL = self.recipeURL.replace('\n', '')
-            yield scrapy.Request(url=f'{self.recipeURL}', callback=self.parse)
+            nameUrl = line.split(';')
+            information = {'name': nameUrl[0], 'url': nameUrl[1].replace('\n', '')}
+            yield scrapy.Request(url=f'{information["url"]}', callback=self.parse, cb_kwargs=information)
 
-
-    def parse(self, response):
+    def parse(self, response, name, url):
         bs = BeautifulSoup(response.body, 'lxml')
         div = bs.find_all('div', class_="wprm-recipe-ingredient-group")
         ingredients = []
@@ -34,7 +30,7 @@ class ScrapeRecipeSpider(scrapy.Spider):
                 ingredients.append(" ".join(ingredient).strip())
         with jsonlines.open('../RecipeWithIngredients.jsonl', mode='a') as writer:
             writer.write({
-                'name': self.recipeName,
-                'url': self.recipeURL,
+                'name': name,
+                'url': url,
                 'ingredients': ingredients
                  })
