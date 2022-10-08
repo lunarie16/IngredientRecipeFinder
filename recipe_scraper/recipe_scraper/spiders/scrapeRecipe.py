@@ -28,14 +28,13 @@ class ScrapeRecipeSpider(scrapy.Spider):
                     if i != 0:
                         ingredient.append(span.get_text().strip())
                 ingredients.append(" ".join(ingredient).strip())
-        div2 = bs.find_all('div', class_="wprm-recipe-instruction-group")
+
+        div2 = bs.find_all('li', class_="wprm-recipe-instruction")
         instructions = []
         for d in div2:
-            lists = d.find_all('li')
-            for ing in lists:
-                span = ing.find('span')
-                if span:
-                    instructions.append(span.get_text().strip())
+            span = d.get_text()
+            if span:
+                instructions.append(span.strip())
         with jsonlines.open('../RecipeWithIngredients.jsonl', mode='a') as writer:
             writer.write({
                 'name': name,
