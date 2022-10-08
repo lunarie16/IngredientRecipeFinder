@@ -43,10 +43,15 @@ def printResults(searchTerms: list, results: list, amount_results: int):
     try:
         number = int(more)
         number = number - 1
+        print(len(f'For "{results[number]["name"].upper()}" you need:') * '-')
+        print(f'For "{results[number]["name"].upper()}" you need:')
+        print(len(f'For "{results[number]["name"].upper()}" you need:') * '-')
+        for ing in results[number]['ingredients']:
+            print(f"->    {ing.strip()}\n")
         print('\n')
-        print(len(f'Introductions for "{results[number]["name"].upper()}":') * '-')
-        print(f'Introductions for "{results[number]["name"].upper()}":')
-        print(len(f'Introductions for "{results[number]["name"].upper()}":') * '-', '\n')
+        print(len(f'Introductions') * '-')
+        print(f'Introductions')
+        print(len(f'Introductions') * '-', '\n')
         for j, inst in enumerate(results[number]['instructions']):
             inst = inst.replace('.', '.\n     ')
             print(f"{j + 1}.    {inst.strip()}\n")
