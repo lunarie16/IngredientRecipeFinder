@@ -21,3 +21,4 @@ class MainPageSpider(scrapy.Spider):
             url = entry.get('href')
             recipeName = entry.get_text()
             f.write(f'{recipeName};{url}\n')
+        f.close()
