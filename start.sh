@@ -15,5 +15,3 @@ else
   echo "Crawling all recipe informations was successful"
   cd ..
 fi
-
-python main.py

@@ -6,10 +6,10 @@ installing dependencies:
 `pip install -r requirements.txt`
 
 
-crawl data & start program after crawling:
+crawl data:
 `sh start.sh`
 
-even if data is already crawled, you can start the program like that. if you want to start it with python (and have the data crawled) type: 
+start the program: 
 `python main.py`
 
 run tests with:
