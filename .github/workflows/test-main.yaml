@@ -1,6 +1,6 @@
 name: Test
 # Workflow is triggernd on any pushes to the repo
-on: [push]
+on: [v*]
 
 
 jobs:
