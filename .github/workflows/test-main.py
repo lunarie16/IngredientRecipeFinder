@@ -1,0 +1,21 @@
+name: Test
+# Workflow is triggernd on any pushes to the repo
+on: [push]
+
+
+jobs:
+  test:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python3
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      - name: UNIT TESTS
+        run: |
+            python3 -m pip install --upgrade pip
+            pip install -r requirements.txt
+            sh start.sh
+            python3 -m unittest -v tests.py
