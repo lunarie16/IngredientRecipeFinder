@@ -2,10 +2,13 @@ import json
 
 
 class IngredientRecipeFinder:
-    def __init__(self):
-        file = open('RecipeWithIngredients.jsonl', 'r')
-        self.data = file.readlines()
-        file.close()
+    def __init__(self, fileName: str = 'RecipeWithIngredients.jsonl'):
+        if fileName.split('.')[-1] != "jsonl":
+            raise ValueError('Invalid file-ending! Please provide an .jsonl file.')
+        else:
+            file = open(fileName, 'r')
+            self.data = file.readlines()
+            file.close()
 
     def search(self, searchTerms: list, numberResults: int = 5) -> list:
         """
