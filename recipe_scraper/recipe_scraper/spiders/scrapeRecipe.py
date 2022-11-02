@@ -35,7 +35,7 @@ class ScrapeRecipeSpider(scrapy.Spider):
             span = d.get_text()
             if span:
                 instructions.append(span.strip())
-        with jsonlines.open('../RecipeWithIngredients.jsonl', mode='a') as writer:
+        with jsonlines.open('../RecipeWithIngredients.jsonl', mode='w') as writer:
             writer.write({
                 'name': name,
                 'url': url,

@@ -16,7 +16,7 @@ class MainPageSpider(scrapy.Spider):
     def parse(self, response):
         bs = BeautifulSoup(response.body, 'lxml')
         div = bs.find_all(rel="bookmark")
-        f = open("names_urls.txt", 'a')
+        f = open("names_urls.txt", 'w')
         for entry in div:
             url = entry.get('href')
             recipeName = entry.get_text()
