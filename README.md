@@ -17,4 +17,11 @@ run tests with:
 
 
 Metrices:
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=bugs)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=coverage)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
