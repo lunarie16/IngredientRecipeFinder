@@ -14,3 +14,7 @@ start the program:
 
 run tests with:
 `python -m unittest tests.py`
+
+
+Metrices:
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
