@@ -1,5 +1,5 @@
 # IngredientRecipeFinder
-This is a project for "Advanced Softwaretechnique" where a fixed website with vegan recipes is scraped and depending ingredients are extract. You can search by a (list of) ingredient(s) to find matching recipes. Let's reduce some food waste!
+This is a project for "Advanced Softwaretechnique" where a fixed website with vegan recipes is scraped and depending ingredients are extracted. You can search by a (list of) ingredient(s) to find matching recipes. Let's reduce some food waste!
 It is using the recipes from Bianca Zapatka (https://biancazapatka.com/de/), whom provides really good, easy and vegan recipes on her website/blog.
 
 installing dependencies:
