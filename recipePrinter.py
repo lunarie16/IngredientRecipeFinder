@@ -1,45 +1,50 @@
+import re
+
+
 class Printer:
 
-    def printResults(self, searchTerms: list, results: dict):
+    def print_results(self, search_terms: list, results: dict):
         """
         :param searchTerms: list of terms which were searched in the recipe ingredients
         :param results: list of results with dict obj of recipe, ordered by match score with ingredient
         :return: None
         """
         print(
-            f'Your searched terms: "{", ".join(searchTerms)}" have been found in the following {len(results)} recipes:\n')
-        for i, results in enumerate(results):
+            f'Your searched terms: "{", ".join(search_terms)}" '
+            f'have been found in the following {len(results)} recipes:\n')
+        for i, result in enumerate(results):
             print(
-                f'{i + 1}. {int(results["score"] * 100)}% match   {results["name"]}  ({results["url"]})\n    -> containing "{", ".join(results["foundIngredients"])}"\n')
+                f'{i + 1}. {int(result["score"] * 100)}% match   {result["name"]}  ({result["url"]})\n    '
+                f'-> containing "{", ".join(result["foundIngredients"])}"\n')
         print()
+        while True:
+            more = input(f'Do you want some introductions for a recipe? '
+                         f'Type the given number (1-{len(results)}) for the recipe or enter "no" to exit:\n>')
+            if more.lower() == 'no':
+                break
+            if re.match(r"\d", more):
+                numb = int(more)
+                numb = numb - 1
+                if numb >= len(results):
+                    print(f"You requested recipe No. {more} but only have {len(results)} results.")
+                    continue
+                else:
+                    self.print_ingredients(results[numb]["name"], results[numb]['ingredients'])
+                    print('\n')
+                    self.print_introductions(results[numb]['instructions'])
+                    continue
 
-        # TODO: write while input() to not make it exit after wrong input
-        more = input(
-            'Do you want some introductions for a recipe? Type the given number for the recipe or enter "no":\n>')
-        if more.lower() == 'no':
-            exit()
-        try:
-            numb = int(more)
-            numb = numb - 1
-            if numb > len(results):
-                print(f"You requested recipe No. {numb} but only searched for {amount_results} results.")
-                exit()
             else:
-                self.printIngredients(results[numb]["name"], results[numb]['ingredients'])
-                print('\n')
-                self.printIntroductions(results[numb]['instructions'])
+                print("Sorry, it seems like this wasn't a number or was exceeding your results index")
+        exit()
 
-        except Exception as e:
-            print(e)
-            print("Sorry, it seems like this wasn't a number or was exceeding your results index")
-
-    def printIngredients(self, recipeName: str, ingredients: list):
+    def print_ingredients(self, recipe_name: str, ingredients: list):
         """
         :param recipeName: recipe name from which ingredients will be printed
         :param ingredients: ingredients to the given recipeName
         :return:
         """
-        header = f'For "{recipeName.upper()}" you need:'
+        header = f'For "{recipe_name.upper()}" you need:'
         border = len(header) * '-'
         print(border)
         print(header)
@@ -47,7 +52,7 @@ class Printer:
         for ing in ingredients:
             print(f"->    {ing.strip()}\n")
 
-    def printIntroductions(self, instructions: list):
+    def print_introductions(self, instructions: list):
         """
         :param instructions: instructions list of before selected recipe
         :return:
