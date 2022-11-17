@@ -27,12 +27,10 @@ class Printer:
                 numb = numb - 1
                 if numb >= len(results):
                     print(f"You requested recipe No. {more} but only have {len(results)} results.")
-                    continue
                 else:
                     self.print_ingredients(results[numb]["name"], results[numb]['ingredients'])
                     print('\n')
                     self.print_introductions(results[numb]['instructions'])
-                    continue
 
             else:
                 print("Sorry, it seems like this wasn't a number or was exceeding your results index")

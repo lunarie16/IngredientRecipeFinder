@@ -10,7 +10,7 @@ class TestIngredientRecipeFinder(unittest.TestCase):
     def test_typoInTerm(self):
         terms = ['Basilikuum']
         result = self.irf.search(terms)
-        self.assertIsNone(result)
+        self.assertEqual(len(result), 0)
 
     def test_amountDefaultResults(self):
         terms = ['Nudeln']

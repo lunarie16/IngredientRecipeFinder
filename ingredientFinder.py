@@ -34,6 +34,6 @@ class IngredientRecipeFinder:
                 results.append(d)
         results = sorted(results, key=lambda e: e['score'], reverse=True)
         if not results:
-            return
+            return []
         else:
             return results[:number_results]
