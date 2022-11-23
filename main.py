@@ -18,7 +18,7 @@ if __name__ == "__main__":
             result = irf.search(search_terms, numberResults)
 
         else:
-            print(f'Results will be having 5 results (default)')
+            print(f'Results will have 5 recipes (default)')
             result = irf.search(search_terms)
 
         if result:
