@@ -13,6 +13,7 @@ start the program:
 `python main.py`
 
 ## Tests
+! tests will be executed automatically with every push to respository -> with github actions 
 run tests with:
 `python -m unittest tests.py`
 
