@@ -1,0 +1,56 @@
+@startuml
+
+title Component Diagram
+
+package "Front End" {
+    component [Graphic User\nInterface] as GUI
+}
+
+cloud Internet {
+}
+
+actor User
+
+component Django
+component SSO 
+component [AI Visual Ingredient Finder] as AI
+component [AI Recipe Creater Training] as AIR
+component IngredientRecipeFinder as IRF
+database "MongoDB" {
+    [Stored Recipes] as SR
+    [User Accounts] as ACC
+} 
+
+component "Backend Logic" as BL
+
+interface Recipe
+interface Account
+interface "access\ncontrol" as ac
+
+
+
+User --> GUI 
+
+GUI --( ac
+ac -- Django
+
+Django --( Account
+Account -- ACC
+
+
+IRF --( Recipe 
+Recipe -- SR
+AIR --( Recipe 
+
+
+Django --> SSO
+Django --> BL
+
+BL --> AI
+AI --> IRF
+BL -->IRF
+
+
+
+
+@enduml
