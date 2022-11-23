@@ -38,7 +38,7 @@ class Printer:
 
     def print_ingredients(self, recipe_name: str, ingredients: list):
         """
-        :param recipeName: recipe name from which ingredients will be printed
+        :param recipe_name: recipe name from which ingredients will be printed
         :param ingredients: ingredients to the given recipeName
         :return:
         """

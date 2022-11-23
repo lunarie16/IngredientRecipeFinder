@@ -1,0 +1,107 @@
+@startuml
+
+title Classes - Class Diagram
+
+
+class Ingredient{
+  String name
+  Enum type
+}
+
+class Instruction{
+  String name
+}
+
+class Rating{
+  Int rate
+  String username
+}
+
+class Comment{
+  String comment
+  String username
+  Rating rate
+  ---
+  + addRating(Rating: rate)
+}
+
+
+class Recipe {
+  String name
+  String url
+  List ingredients
+  List instructions
+  Datetime lastUpdated
+  Float rating
+  ---
+  + addIngredient(Ingredient: ingredient)
+  + deleteIngredient(Ingredient: ingredient)
+  + addInstruction(Instruction: instruction)
+  + deleteInstruction(Instruction: instruction)
+  - delete()
+}
+
+class Account {
+  UUID id
+  String username
+  ---
+  - delete()
+  - deactivate()
+  + changePassword()
+  -- crypted --
+  -String password
+}
+
+class RegisteredUser{
+  Bool premium
+  BankInstituteList banks
+  ---
+  + changePremium(): void
+}
+
+class BankInstitute {
+  String name
+  String iban
+  String bic
+  String paypal 
+  String creditcardnr
+}
+
+class Professional{
+  String name
+  String surname
+  Datetime accountCreation
+}
+
+class Blogger {
+   String url
+   ---
+  +addUrl()
+}
+
+
+class Cook {
+  Int amountMichcelinStarts
+  List professionalReferences
+  ---
+  + addReferences()
+  + addStar()
+  - removeStar()
+}
+
+RegisteredUser --^ Account
+Professional --^ Account
+Cook --^ Professional
+Blogger --^ Professional
+BankInstitute "1..* " --up-* "1" RegisteredUser
+
+Recipe "0..*" -up-* "1" Professional
+Rating "0..*" -up-* "1" Account
+Rating "0...*" -up-o "1" Recipe
+Comment "*" -up-* "1" Account
+Recipe "0..*" o-up- "1..*" Ingredient
+Recipe "0..*" o-up- "1..*" Instruction
+Comment "0..*" -up-* "1" Rating
+
+
+@enduml
