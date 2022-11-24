@@ -70,8 +70,6 @@ run tests manually with:
 - ```option + c/v/x``` (copy/paste/cut)
 - ```cmd + /``` (comment (out))  
 - ``` shift + ctrl + d``` (start debugger)
-  
-&rarr; TODO
 
 ## 10. DSL
 &rarr; TODO
