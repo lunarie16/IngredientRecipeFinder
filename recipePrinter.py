@@ -5,7 +5,7 @@ class Printer:
 
     def print_results(self, search_terms: list, results: dict):
         """
-        :param searchTerms: list of terms which were searched in the recipe ingredients
+        :param search_terms: list of terms which were searched in the recipe ingredients
         :param results: list of results with dict obj of recipe, ordered by match score with ingredient
         :return: None
         """
