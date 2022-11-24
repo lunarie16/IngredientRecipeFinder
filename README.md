@@ -12,14 +12,17 @@ crawl data:
 start the program: 
 `python main.py`
 
-## Tests
-! tests will be executed automatically with every push to respository -> with github actions 
 
-run tests with:
-`python -m unittest tests.py`
+## 1. Git
+[See commit history here](https://github.com/lunarie16/IngredientRecipeFinder/commits/main)
 
+## 2. UML 
+[PNGs and Planttext-Files](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/uml-diag)
 
-## Metrices:
+## 3. DDD
+--> TODO
+
+## 4. Metrices
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=bugs)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
@@ -28,3 +31,32 @@ run tests with:
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
 <!-- [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=coverage)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder) -->
+
+## 5. Clean Code Dev
+--> TODO
+
+## 6. Build
+--> TODO
+
+## 7. UnitTests
+! tests will be executed automatically with every push to respository -> with github actions (see 8.)
+
+run tests manually with:
+`python -m unittest tests.py`
+
+## 8. Continuous Delivery
+[GitHub Action - Test](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/.github/workflows)
+
+## 9. IDE
+### Pycharm 
+- *own Shortcut*: 
+  option + r = run 
+  
+--> TODO
+
+## 10. DSL
+--> TODO
+
+## 11. Functional Programming
+--> TODO
+
