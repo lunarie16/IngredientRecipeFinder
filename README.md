@@ -20,7 +20,7 @@ start the program:
 [PNGs and Planttext-Files](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/uml-diag)
 
 ## 3. DDD
---> TODO
+&rarr; TODO
 
 ## 4. Metrices
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
@@ -33,10 +33,22 @@ start the program:
 <!-- [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=coverage)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder) -->
 
 ## 5. Clean Code Dev
---> TODO
+### A)
+&rarr; [parameter and return types](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/ingredientFinder.py#L13)
+
+&rarr; [docstrings](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/ingredientFinder.py#L15)
+
+&rarr; [explanatory variable names](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/ingredientFinder.py#L25)
+
+&rarr; [throw exception with context](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/ingredientFinder.py#L7)
+
+&rarr; [one assert per test](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/tests.py#L10)
+
+### B)
+[Cheat Sheet](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/ccd-cheat-sheet.md)
 
 ## 6. Build
---> TODO
+&rarr; TODO
 
 ## 7. UnitTests
 ! tests will be executed automatically with every push to respository -> with github actions (see 8.)
@@ -49,14 +61,21 @@ run tests manually with:
 
 ## 9. IDE
 ### Pycharm 
-- *own Shortcut*: 
-  option + r = run 
+&rarr; *own Shortcut*: 
+- ```option + r``` (run) 
   
---> TODO
+&rarr; *build-in*:
+- ```cmd + f``` (find)
+- ```cmd + r``` (replace) 
+- ```option + c/v/x``` (copy/paste/cut)
+- ```cmd + /``` (comment (out))  
+- ``` shift + ctrl + d``` (start debugger)
+  
+&rarr; TODO
 
 ## 10. DSL
---> TODO
+&rarr; TODO
 
 ## 11. Functional Programming
---> TODO
+&rarr; TODO
 
