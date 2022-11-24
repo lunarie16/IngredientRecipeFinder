@@ -14,13 +14,13 @@ start the program:
 
 
 ## 1. Git
-[See commit history here](https://github.com/lunarie16/IngredientRecipeFinder/commits/main)
+&rarr; [See commit history here](https://github.com/lunarie16/IngredientRecipeFinder/commits/main)
 
 ## 2. UML 
-[PNGs and Planttext-Files](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/uml-diag)
+&rarr; [PNGs and Planttext-Files](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/uml-diag)
 
 ## 3. DDD
-&rarr; TODO
+&rarr; [PDF-file with Event Storming, Diagram and DDD](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/Domain-Driven-Design.pdf)
 
 ## 4. Metrices
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=lunarie16_IngredientRecipeFinder&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=lunarie16_IngredientRecipeFinder)
@@ -45,19 +45,20 @@ start the program:
 &rarr; [one assert per test](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/tests.py#L10)
 
 ### B)
-[Cheat Sheet](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/ccd-cheat-sheet.md)
+&rarr; [Cheat Sheet](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/ccd-cheat-sheet.md)
 
 ## 6. Build
 &rarr; TODO
 
 ## 7. UnitTests
 ! tests will be executed automatically with every push to respository -> with github actions (see 8.)
+&rarr; [find tests here](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/tests.py)
 
 run tests manually with:
 `python -m unittest tests.py`
 
 ## 8. Continuous Delivery
-[GitHub Action - Test](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/.github/workflows)
+&rarr; [GitHub Action - Test](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/.github/workflows)
 
 ## 9. IDE
 ### Pycharm 
