@@ -10,7 +10,7 @@ crawl data:
 `sh start.sh`
 
 start the program: 
-`python main.py`
+`python src/main/python/main.py`
 
 
 ## 1. Git

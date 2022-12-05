@@ -1,0 +1,48 @@
+WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.macosx-10.9-x86_64' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+copying __init__.py -> build/lib
+copying recipePrinter.py -> build/lib
+copying ingredientFinder.py -> build/lib
+copying main.py -> build/lib
+/Users/studium/Desktop/MasterBHT/WS22/Advanced_Softwaretechnique/IngredientRecipeFinder/.pybuilder/plugins/cpython-3.9.7.final.0/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+installing to build/bdist.macosx-10.9-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.macosx-10.9-x86_64
+creating build/bdist.macosx-10.9-x86_64/wheel
+copying build/lib/__init__.py -> build/bdist.macosx-10.9-x86_64/wheel
+copying build/lib/recipePrinter.py -> build/bdist.macosx-10.9-x86_64/wheel
+copying build/lib/ingredientFinder.py -> build/bdist.macosx-10.9-x86_64/wheel
+copying build/lib/main.py -> build/bdist.macosx-10.9-x86_64/wheel
+running install_egg_info
+running egg_info
+writing IngredientRecipeFinder.egg-info/PKG-INFO
+writing dependency_links to IngredientRecipeFinder.egg-info/dependency_links.txt
+writing namespace_packages to IngredientRecipeFinder.egg-info/namespace_packages.txt
+writing top-level names to IngredientRecipeFinder.egg-info/top_level.txt
+reading manifest file 'IngredientRecipeFinder.egg-info/SOURCES.txt'
+writing manifest file 'IngredientRecipeFinder.egg-info/SOURCES.txt'
+Copying IngredientRecipeFinder.egg-info to build/bdist.macosx-10.9-x86_64/wheel/IngredientRecipeFinder-1.0.dev0-py3.9.egg-info
+running install_scripts
+creating build/bdist.macosx-10.9-x86_64/wheel/IngredientRecipeFinder-1.0.dev0.dist-info/WHEEL
+creating 'dist/IngredientRecipeFinder-1.0.dev0-py3-none-any.whl' and adding 'build/bdist.macosx-10.9-x86_64/wheel' to it
+adding '__init__.py'
+adding 'ingredientFinder.py'
+adding 'main.py'
+adding 'recipePrinter.py'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/METADATA'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/WHEEL'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/namespace_packages.txt'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/top_level.txt'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/zip-safe'
+adding 'IngredientRecipeFinder-1.0.dev0.dist-info/RECORD'
+removing build/bdist.macosx-10.9-x86_64/wheel

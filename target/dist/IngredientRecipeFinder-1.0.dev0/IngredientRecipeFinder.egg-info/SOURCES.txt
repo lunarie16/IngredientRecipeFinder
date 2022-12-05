@@ -1,0 +1,11 @@
+__init__.py
+ingredientFinder.py
+main.py
+recipePrinter.py
+setup.py
+IngredientRecipeFinder.egg-info/PKG-INFO
+IngredientRecipeFinder.egg-info/SOURCES.txt
+IngredientRecipeFinder.egg-info/dependency_links.txt
+IngredientRecipeFinder.egg-info/namespace_packages.txt
+IngredientRecipeFinder.egg-info/top_level.txt
+IngredientRecipeFinder.egg-info/zip-safe

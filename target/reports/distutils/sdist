@@ -1,0 +1,36 @@
+WARNING: '.' not a valid package name; please use only .-separated package names in setup.py
+running clean
+'build/lib' does not exist -- can't clean it
+'build/bdist.macosx-10.9-x86_64' does not exist -- can't clean it
+'build/scripts-3.9' does not exist -- can't clean it
+running sdist
+running egg_info
+creating IngredientRecipeFinder.egg-info
+writing IngredientRecipeFinder.egg-info/PKG-INFO
+writing dependency_links to IngredientRecipeFinder.egg-info/dependency_links.txt
+writing namespace_packages to IngredientRecipeFinder.egg-info/namespace_packages.txt
+writing top-level names to IngredientRecipeFinder.egg-info/top_level.txt
+writing manifest file 'IngredientRecipeFinder.egg-info/SOURCES.txt'
+reading manifest file 'IngredientRecipeFinder.egg-info/SOURCES.txt'
+writing manifest file 'IngredientRecipeFinder.egg-info/SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating IngredientRecipeFinder-1.0.dev0
+creating IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying files to IngredientRecipeFinder-1.0.dev0...
+copying __init__.py -> IngredientRecipeFinder-1.0.dev0
+copying ingredientFinder.py -> IngredientRecipeFinder-1.0.dev0
+copying main.py -> IngredientRecipeFinder-1.0.dev0
+copying recipePrinter.py -> IngredientRecipeFinder-1.0.dev0
+copying setup.py -> IngredientRecipeFinder-1.0.dev0
+copying IngredientRecipeFinder.egg-info/PKG-INFO -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying IngredientRecipeFinder.egg-info/SOURCES.txt -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying IngredientRecipeFinder.egg-info/dependency_links.txt -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying IngredientRecipeFinder.egg-info/namespace_packages.txt -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying IngredientRecipeFinder.egg-info/top_level.txt -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+copying IngredientRecipeFinder.egg-info/zip-safe -> IngredientRecipeFinder-1.0.dev0/IngredientRecipeFinder.egg-info
+Writing IngredientRecipeFinder-1.0.dev0/setup.cfg
+creating dist
+Creating tar archive
+removing 'IngredientRecipeFinder-1.0.dev0' (and everything under it)

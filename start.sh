@@ -7,7 +7,7 @@ else
   cd ..
 fi
 
-if [ -f RecipeWithIngredients.jsonl ]; then
+if [ -f data/RecipeWithIngredients.jsonl ]; then
   echo "Already crawled all information from recipes"
 else
   cd recipe_scraper

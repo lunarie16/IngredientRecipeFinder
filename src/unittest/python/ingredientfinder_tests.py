@@ -2,7 +2,7 @@ import unittest
 from ingredientFinder import IngredientRecipeFinder
 
 
-class TestIngredientRecipeFinder(unittest.TestCase):
+class IngredientRecipeFinderTest(unittest.TestCase):
 
     def setUp(self):
         self.irf = IngredientRecipeFinder()

@@ -1,8 +1,10 @@
 import json
+import os
 
 
 class IngredientRecipeFinder:
-    def __init__(self, filename: str = 'RecipeWithIngredients.jsonl'):
+    print(os.getcwd())
+    def __init__(self, filename: str = 'data/RecipeWithIngredients.jsonl'):
         if filename.split('.')[-1] != "jsonl":
             raise ValueError('Invalid file-ending! Please provide an .jsonl file.')
         else:

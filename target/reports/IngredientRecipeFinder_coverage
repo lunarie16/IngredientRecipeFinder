@@ -1,0 +1,8 @@
+Name                  Stmts   Miss Branch BrPart  Cover
+-------------------------------------------------------
+__init__.py               0      0      0      0   100%
+ingredientFinder.py      31      1     14      1    96%
+main.py                  20     20      6      0     0%
+recipePrinter.py         37     37     12      0     0%
+-------------------------------------------------------
+TOTAL                    88     58     32      1    36%
