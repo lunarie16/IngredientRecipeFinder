@@ -1,5 +1,9 @@
 import unittest
-from ingredientFinder import IngredientRecipeFinder
+try:
+    from ingredientFinder import IngredientRecipeFinder
+
+except ModuleNotFoundError:
+    from ...main.python.ingredientFinder import IngredientRecipeFinder
 
 
 class IngredientRecipeFinderTest(unittest.TestCase):

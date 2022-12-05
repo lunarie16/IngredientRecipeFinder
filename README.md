@@ -55,7 +55,7 @@ start the program:
 &rarr; [find tests here](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/src/unittest/python/ingredientfinder_tests.py)
 
 run tests manually with:
-`python -m unittest tests.py`
+`python3 -m unittest -v src/unittest/python/ingredientfinder_tests.py`
 
 ## 8. Continuous Delivery
 &rarr; [GitHub Action - Test](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/.github/workflows)
