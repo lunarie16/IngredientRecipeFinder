@@ -42,17 +42,17 @@ start the program:
 
 &rarr; [throw exception with context](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/ingredientFinder.py#L7)
 
-&rarr; [one assert per test](https://github.com/lunarie16/IngredientRecipeFinder/blob/4fdee32c880bd9b0ddc84ddf32752fb916c3f81f/tests.py#L10)
+&rarr; [one assert per test](https://github.com/lunarie16/IngredientRecipeFinder/blob/053c05a87481155602432f135db364b8468c7a3e/src/unittest/python/ingredientfinder_tests.py#L130)
 
 ### B)
 &rarr; [Cheat Sheet](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/ccd-cheat-sheet.md)
 
 ## 6. Build
-&rarr; TODO
+&rarr; [with Pybuilder](https://github.com/lunarie16/IngredientRecipeFinder/tree/main/target/dist/IngredientRecipeFinder-1.0.dev0)
 
 ## 7. UnitTests
 ! tests will be executed automatically with every push to respository -> with github actions (see 8.)
-&rarr; [find tests here](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/tests.py)
+&rarr; [find tests here](https://github.com/lunarie16/IngredientRecipeFinder/blob/main/src/unittest/python/ingredientfinder_tests.py)
 
 run tests manually with:
 `python -m unittest tests.py`
