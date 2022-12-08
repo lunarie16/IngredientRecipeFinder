@@ -6,10 +6,10 @@ except ModuleNotFoundError:
     from ...main.python.ingredientFinder import IngredientRecipeFinder
 
 
-class IngredientRecipeFinderTest(unittest.TestCase):
+class IngredientRecipeFinderGermanTest(unittest.TestCase):
 
     def setUp(self):
-        self.irf = IngredientRecipeFinder()
+        self.irf = IngredientRecipeFinder('data/RecipeWithIngredients.jsonl')
 
     def test_typoInTerm(self):
         terms = ['Basilikuum']
