@@ -9,8 +9,10 @@ installing dependencies:
 crawl data:
 `sh start.sh`
 
-start the program: 
+start the program (default english recipes): 
 `python src/main/python/main.py`
+for german option: 
+`python src/main/python/main.py -l de`
 
 
 ## 1. Git
