@@ -11,8 +11,8 @@ crawl data:
 
 start the program (default english recipes): 
 `python src/main/python/main.py`
-for german option: 
-`python src/main/python/main.py -l de`
+for german option add: 
+`-l de`
 
 
 ## 1. Git
