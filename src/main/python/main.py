@@ -1,10 +1,18 @@
 from ingredientFinder import IngredientRecipeFinder
 from recipePrinter import Printer
 import re
-
+import argparse
 
 if __name__ == "__main__":
-    irf = IngredientRecipeFinder()
+    parser = argparse.ArgumentParser(description='Find recipes with given ingredients.')
+    parser.add_argument('-l', default='en', type=str, choices=['en', 'de'],
+                        help='language to use: de (for german) or en (for english, default)')
+
+    args = parser.parse_args()
+    if args.l == 'en':
+        irf = IngredientRecipeFinder()
+    else:
+        irf = IngredientRecipeFinder('data/RecipeWithIngredients.jsonl')
     printer = Printer()
 
     while True:
