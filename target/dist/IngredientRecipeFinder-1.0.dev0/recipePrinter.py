@@ -48,7 +48,7 @@ class Printer:
         print(header)
         print(border)
         for ing in ingredients:
-            print(f"->    {ing.strip()}\n")
+            print(f"->    {' '.join(ing).strip()}\n")
 
     def print_introductions(self, instructions: list):
         """

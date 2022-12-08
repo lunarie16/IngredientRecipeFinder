@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ingredientfinder_tests.IngredientRecipeFinderGermanTest-20221208104301" tests="5" file="ingredientfinder_tests.py" time="0.071" timestamp="2022-12-08T10:43:02" failures="0" errors="0" skipped="0">
+	<testcase classname="ingredientfinder_tests.IngredientRecipeFinderGermanTest" name="test_amountDefaultResults" time="0.013" timestamp="2022-12-08T10:43:02"/>
+	<testcase classname="ingredientfinder_tests.IngredientRecipeFinderGermanTest" name="test_inputResult" time="0.012" timestamp="2022-12-08T10:43:02"/>
+	<testcase classname="ingredientfinder_tests.IngredientRecipeFinderGermanTest" name="test_orderOfResults" time="0.015" timestamp="2022-12-08T10:43:02"/>
+	<testcase classname="ingredientfinder_tests.IngredientRecipeFinderGermanTest" name="test_stringAsInputType" time="0.018" timestamp="2022-12-08T10:43:02"/>
+	<testcase classname="ingredientfinder_tests.IngredientRecipeFinderGermanTest" name="test_typoInTerm" time="0.012" timestamp="2022-12-08T10:43:02"/>
+</testsuite>

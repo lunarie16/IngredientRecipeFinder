@@ -3,8 +3,7 @@ import os
 
 
 class IngredientRecipeFinder:
-    print(os.getcwd())
-    def __init__(self, filename: str = 'data/RecipeWithIngredients.jsonl'):
+    def __init__(self, filename: str = 'data/RecipeWithIngredientsEn.jsonl'):
         if filename.split('.')[-1] != "jsonl":
             raise ValueError('Invalid file-ending! Please provide an .jsonl file.')
         else:
@@ -21,12 +20,12 @@ class IngredientRecipeFinder:
         results = []
         for d in self.data:
             d = json.loads(d)
-            ingredients = ' '.join(d['ingredients']).lower()
+            ingredients = [[j.lower() for j in i] for i in d['ingredients']]
             score = 0
             found = []
             for term in search_terms:
                 ingredient = term.lower().strip()
-                if ingredient in ingredients:
+                if any(ingredient in i for i in ingredients):
                     score += 1
                     found.append(ingredient.capitalize())
             final_score = score / len(search_terms)
