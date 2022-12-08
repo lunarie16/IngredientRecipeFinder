@@ -6,7 +6,6 @@ import jsonlines
 class ScrapeRecipeSpider(scrapy.Spider):
     name = "scrapeRecipe"
 
-
     def start_requests(self):
         f = open('names_urls.txt')
         lines = f.readlines()
@@ -20,14 +19,16 @@ class ScrapeRecipeSpider(scrapy.Spider):
         div = bs.find_all('div', class_="wprm-recipe-ingredient-group")
         ingredients = []
         for d in div:
-            lists = d.find_all('li')
+            lists = d.find_all('li', class_="wprm-recipe-ingredient")
             for ing in lists:
                 spans = ing.find_all('span')
                 ingredient = []
                 for i, span in enumerate(spans):
                     if i != 0:
                         ingredient.append(span.get_text().strip())
-                ingredients.append(" ".join(ingredient).strip())
+                ingredient = list(filter(None, ingredient))
+                ingredient = [words for segments in ingredient for words in segments.split()]
+                ingredients.append(ingredient)
 
         div2 = bs.find_all('li', class_="wprm-recipe-instruction")
         instructions = []
@@ -35,7 +36,8 @@ class ScrapeRecipeSpider(scrapy.Spider):
             span = d.get_text()
             if span:
                 instructions.append(span.strip())
-        with jsonlines.open('../RecipeWithIngredients.jsonl', mode='w') as writer:
+
+        with jsonlines.open('../RecipeWithIngredients.jsonl', mode='a') as writer:
             writer.write({
                 'name': name,
                 'url': url,
