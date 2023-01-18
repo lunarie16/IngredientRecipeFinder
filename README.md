@@ -75,8 +75,16 @@ run tests manually with:
 - ``` shift + ctrl + d``` (start debugger)
 
 ## 10. DSL
-&rarr; TODO
+&rarr; [extraction of information from HTML content](https://github.com/lunarie16/IngredientRecipeFinder/blob/bb87c812dc109c53609cfde8f5f05a906a3e8672/recipe_scraper/recipe_scraper/spiders/scrapeRecipe.py#L19)
+
+&rarr; [extraction of words with regex](https://github.com/lunarie16/IngredientRecipeFinder/blob/bb87c812dc109c53609cfde8f5f05a906a3e8672/src/main/python/main.py#L23)
 
 ## 11. Functional Programming
-&rarr; TODO
+&rarr; [only final data structures](https://github.com/lunarie16/IngredientRecipeFinder/blob/1ee0024ea1816d2a820f3439ed63d91c83b5b9b6/src/main/python/recipe.py#L5)
+
+&rarr; [(mostly) side effect free functions](https://github.com/lunarie16/IngredientRecipeFinder/blob/1ee0024ea1816d2a820f3439ed63d91c83b5b9b6/src/main/python/recipe.py#L14)
+
+&rarr; [use closures / anonymous functions](https://github.com/lunarie16/IngredientRecipeFinder/blob/1ee0024ea1816d2a820f3439ed63d91c83b5b9b6/src/main/python/recipe.py#L12)
+
+&rarr; [the use of higher-order functions/functions as parameters and return values](https://github.com/lunarie16/IngredientRecipeFinder/blob/1ee0024ea1816d2a820f3439ed63d91c83b5b9b6/src/main/python/main.py#L16)
 
