@@ -5,14 +5,15 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Find recipes with given ingredients.')
-    parser.add_argument('-l', default='en', type=str, choices=['en', 'de'],
+    parser.add_argument('-lang', default='en', type=str, choices=['en', 'de'],
                         help='language to use: de (for german) or en (for english, default)')
 
     args = parser.parse_args()
-    if args.l == 'en':
+    if args.lang == 'en':
         irf = IngredientRecipeFinder()
     else:
         irf = IngredientRecipeFinder('data/RecipeWithIngredients.jsonl')
+        search = irf.search
     printer = Printer()
 
     while True:
@@ -23,11 +24,11 @@ if __name__ == "__main__":
         if re.match(r"\d", amount_results):
             numberResults = int(amount_results)
             print(f'Results will be having {numberResults} results')
-            result = irf.search(search_terms, numberResults)
+            result = search(search_terms, numberResults)
 
         else:
             print(f'Results will have 5 recipes (default)')
-            result = irf.search(search_terms)
+            result = search(search_terms)
 
         if result:
             printer.print_results(search_terms, result)
